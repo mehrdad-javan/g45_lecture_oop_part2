@@ -31,6 +31,7 @@ public abstract class Person {
   }
 
   public void setFirstName(String firstName) {
+    if (firstName == null) throw new IllegalArgumentException("FirstName was null.");
     this.firstName = firstName;
   }
 
