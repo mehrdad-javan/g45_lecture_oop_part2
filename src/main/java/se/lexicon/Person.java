@@ -1,6 +1,6 @@
 package se.lexicon;
 
-public class Person {
+public abstract class Person {
   private String firstName;
   private String lastName;
   private int age;
@@ -20,6 +20,8 @@ public class Person {
   public String getFullName(){
     return firstName + "," + lastName;
   }
+
+  public abstract String getInformation();
 
 
   // getters & setters

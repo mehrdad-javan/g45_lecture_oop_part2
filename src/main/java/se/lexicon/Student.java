@@ -38,6 +38,11 @@ public class Student extends Person {
 
   }
 
+
+  public String getInformation(){
+    return "studentId: " + studentId + " Name: " + getFullName();
+  }
+
   @Override
   public String getFullName(){
     return "FullName: " + getFirstName() + " " + getLastName() + " ";
