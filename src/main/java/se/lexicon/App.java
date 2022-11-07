@@ -1,5 +1,8 @@
 package se.lexicon;
 
+import se.lexicon.model.Gender;
+import se.lexicon.model.Student;
+
 /**
  * Hello world!
  */

@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.model;
 
 public abstract class Person {
   private String firstName;

@@ -1,4 +1,4 @@
-package se.lexicon;
+package se.lexicon.model;
 
 import java.util.Arrays;
 
