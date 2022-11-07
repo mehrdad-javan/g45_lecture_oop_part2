@@ -38,6 +38,19 @@ public class Student extends Person {
 
   }
 
+  @Override
+  public String getFullName(){
+    return "FullName: " + getFirstName() + " " + getLastName() + " ";
+  }
+
+  @Override
+  public String toString() {
+    return "Student{" +
+            "studentId=" + studentId +
+            ", courses=" + Arrays.toString(courses) +
+            '}';
+  }
+
   // setters & getters
 
   public int getStudentId() {
