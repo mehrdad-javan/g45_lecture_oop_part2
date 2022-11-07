@@ -1,4 +1,4 @@
 # OOP Inheritance & Polymorphism
 
-## final & Enume
+## final & Enum
 ## Junit 5
