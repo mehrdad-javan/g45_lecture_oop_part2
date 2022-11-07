@@ -3,6 +3,9 @@ package se.lexicon;
 import java.util.Arrays;
 
 public class Student extends Person {
+
+  public static final int MAX_COURSES = 5;
+
   // fields
   private int studentId;
   private String[] courses; // null
@@ -16,6 +19,9 @@ public class Student extends Person {
   // methods
   public void registerCourse(String course) {
     if (courses == null) courses = new String[0];
+    if (courses.length > MAX_COURSES){
+      throw new IllegalArgumentException("number of registered course should not be grater than " + MAX_COURSES);
+    }
 
     String[] newArray = Arrays.copyOf(courses, courses.length + 1);
     newArray[ newArray.length - 1] = course;
